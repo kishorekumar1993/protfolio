@@ -1,18 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S. Kishore Kumar | Technical Lead & Flutter Architect</title>
-    <meta name="description" content="Portfolio of S. Kishore Kumar – Technical Lead with 12+ years of expertise in Flutter, Clean Architecture, FinTech, CRM, and AI-driven automation.">
-    <meta name="keywords" content="Flutter, Technical Lead, Software Engineer, Dart, React, FinTech, CRM, Clean Architecture, Chennai">
+    <title>S. Kishore Kumar | Technical Lead &amp; Insurance / Flutter Architect</title>
+    <meta name="description"
+        content="Portfolio of S. Kishore Kumar – Technical Lead with 12+ years of expertise in Insurance Platforms, FinTech, Enterprise HRMS, Healthcare, IoT, and Flutter Clean Architecture.">
+    <meta name="keywords"
+        content="Insurance Platform, Flutter Architect, Technical Lead, FinTech, HRMS, Healthcare, IoT, Clean Architecture, Dart, React, Chennai">
     <meta name="author" content="S. Kishore Kumar">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="S. Kishore Kumar | Technical Lead &amp; Insurance / Flutter Architect">
+    <meta property="og:description"
+        content="12+ years architecting scalable Insurance Platforms, FinTech ecosystems, Enterprise HRMS, Healthcare, and IoT systems.">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "S. Kishore Kumar",
+      "jobTitle": "Technical Lead & Flutter Architect",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chennai",
+        "addressCountry": "India"
+      },
+      "email": "mailto:kishorekumar.selvaraja13@gmail.com",
+      "telephone": "+919092954409",
+      "sameAs": [
+        "https://linkedin.com/in/kishore-kumar-aaa308126"
+      ],
+      "knowsAbout": [
+        "Insurance Platforms",
+        "FinTech Ecosystems",
+        "Enterprise HRMS",
+        "Healthcare Mobile Apps",
+        "IoT & BLE Telemetry",
+        "Flutter & Dart",
+        "Clean Architecture",
+        "Agile Team Leadership"
+      ]
+    }
+    </script>
 </head>
+
 <body>
 
     <!-- Custom Cursor -->
@@ -22,15 +66,22 @@
     <!-- Canvas for particle background -->
     <canvas id="particle-canvas"></canvas>
 
-    <!-- Gradient blobs -->
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
+    <!-- Glowing ambient background orbs -->
+    <div class="ambient-glow glow-cyan"></div>
+    <div class="ambient-glow glow-indigo"></div>
+    <div class="ambient-glow glow-emerald"></div>
+    <div class="ambient-glow glow-purple"></div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
     <!-- Navbar -->
     <header id="navbar">
         <nav>
-            <a href="#hero" class="logo" id="logo-link">Kishore Kumar<span class="logo-dot">.</span></a>
+            <a href="#hero" class="logo" id="logo-link">
+                <span class="logo-badge"><i class="fas fa-shield-alt"></i></span>
+                Kishore Kumar<span class="logo-dot">.</span>
+            </a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -39,8 +90,13 @@
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <a href="mailto:kishorekumar.selvaraja13@gmail.com" class="nav-cta" id="nav-cta-btn">Hire Me</a>
-            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+            <div class="nav-actions">
+                <a href="#contact" class="nav-cta" id="nav-cta-btn">
+                    <span>Hire Me</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" role="button" tabindex="0">
                 <span></span><span></span><span></span>
             </div>
         </nav>
@@ -52,64 +108,102 @@
             <div class="hero-content">
                 <div class="hero-badge">
                     <span class="badge-dot"></span>
-                    Available for Leadership Roles
+                    <i class="fas fa-award"></i> Available for Leadership &amp; Architecture Roles
                 </div>
                 <p class="greeting">Hello, I'm</p>
                 <h1 class="hero-name">S. Kishore Kumar</h1>
                 <div class="hero-title-wrapper">
-                    <span class="static-title">I'm a&nbsp;</span>
+                    <span class="static-title">I am a&nbsp;</span>
                     <span class="typed-title" id="typed-title"></span>
                     <span class="cursor-blink">|</span>
                 </div>
                 <p class="hero-desc">
-                    <strong>12+ years</strong> architecting scalable CRM, FinTech &amp; Insurance applications.
-                    Specializing in Flutter, Clean Architecture, and AI-driven automation strategies.
+                    <strong>12+ years of software engineering excellence</strong> specializing in high-impact 
+                    <strong class="highlight-fintech">Insurance &amp; FinTech Platforms</strong>, 
+                    <strong class="highlight-hrms">Enterprise HRMS</strong>, 
+                    <strong class="highlight-health">Healthcare Solutions</strong>, and 
+                    <strong class="highlight-iot">IoT Ecosystems</strong>. Driving enterprise scalability with Flutter Clean Architecture and agile team leadership.
                 </p>
+                
+                <div class="hero-pills">
+                    <span class="pill pill-insurance"><i class="fas fa-umbrella"></i> Insurance &amp; FinTech</span>
+                    <span class="pill pill-hrms"><i class="fas fa-users-gear"></i> Enterprise HRMS</span>
+                    <span class="pill pill-health"><i class="fas fa-heart-pulse"></i> Healthcare</span>
+                    <span class="pill pill-iot"><i class="fas fa-microchip"></i> IoT &amp; BLE</span>
+                </div>
+
                 <div class="cta-buttons">
-                    <a href="#experience" class="btn primary-btn" id="view-work-btn">
-                        <i class="fas fa-briefcase"></i> View My Work
+                    <a href="#projects" class="btn primary-btn" id="view-projects-btn">
+                        <i class="fas fa-shield-alt"></i> View Insurance &amp; Projects
                     </a>
-                    <a href="#contact" class="btn secondary-btn" id="contact-btn">
+                    <a href="#experience" class="btn secondary-btn" id="view-work-btn">
+                        <i class="fas fa-briefcase"></i> Experience
+                    </a>
+                    <a href="#contact" class="btn outline-btn" id="contact-btn">
                         <i class="fas fa-paper-plane"></i> Let's Talk
                     </a>
                 </div>
+
                 <div class="hero-socials">
-                    <a href="https://linkedin.com/in/kishore-kumar-aaa308126" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon" id="social-linkedin">
+                    <a href="https://linkedin.com/in/kishore-kumar-aaa308126" target="_blank" rel="noopener"
+                        aria-label="LinkedIn" class="social-icon" id="social-linkedin" title="LinkedIn Profile">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="mailto:kishorekumar.selvaraja13@gmail.com" aria-label="Email" class="social-icon" id="social-email">
+                    <div class="social-icon copy-trigger" data-copy="kishorekumar.selvaraja13@gmail.com"
+                        data-label="Email" id="social-email" title="Click to copy email">
                         <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="tel:+919092954409" aria-label="Phone" class="social-icon" id="social-phone">
+                    </div>
+                    <div class="social-icon copy-trigger" data-copy="+919092954409" data-label="Phone Number"
+                        id="social-phone" title="Click to copy phone">
                         <i class="fas fa-phone"></i>
-                    </a>
+                    </div>
+                    <div class="quick-badge">
+                        <i class="fas fa-location-dot"></i> Chennai, India
+                    </div>
                 </div>
             </div>
 
             <div class="hero-visual">
                 <div class="orbit-container">
-                    <div class="orbit-center profile-center"></div>
+                    <div class="orbit-center profile-center">
+                        <div class="profile-photo-wrapper">
+                            <div class="profile-glow"></div>
+                            <div class="profile-ring profile-ring-1"></div>
+                            <div class="profile-ring profile-ring-2"></div>
+                            <img src="profile.png" alt="S. Kishore Kumar - Technical Lead &amp; Flutter Architect" class="profile-photo">
+                        </div>
+                    </div>
                     <div class="orbit orbit-1">
-                        <div class="orbit-item" style="--angle:0deg"><i class="fa-brands fa-react" style="color:#61DAFB"></i></div>
-                        <div class="orbit-item" style="--angle:90deg"><i class="fa-brands fa-node-js" style="color:#8CC84B"></i></div>
-                        <div class="orbit-item" style="--angle:180deg"><i class="fa-brands fa-python" style="color:#FFD43B"></i></div>
-                        <div class="orbit-item" style="--angle:270deg"><i class="fa-brands fa-git-alt" style="color:#F1502F"></i></div>
+                        <div class="orbit-item" style="--angle:0deg" title="Flutter"><i class="fa-brands fa-flutter"
+                                style="color:#02569B"></i></div>
+                        <div class="orbit-item" style="--angle:72deg" title="React"><i class="fa-brands fa-react"
+                                style="color:#61DAFB"></i></div>
+                        <div class="orbit-item" style="--angle:144deg" title="Node.js"><i class="fa-brands fa-node-js"
+                                style="color:#8CC84B"></i></div>
+                        <div class="orbit-item" style="--angle:216deg" title="Python"><i class="fa-brands fa-python"
+                                style="color:#FFD43B"></i></div>
+                        <div class="orbit-item" style="--angle:288deg" title="Git"><i class="fa-brands fa-git-alt"
+                                style="color:#F1502F"></i></div>
                     </div>
                     <div class="orbit orbit-2">
-                        <div class="orbit-item" style="--angle:45deg"><i class="fa-brands fa-docker" style="color:#2496ED"></i></div>
-                        <div class="orbit-item" style="--angle:225deg"><i class="fa-brands fa-android" style="color:#3DDC84"></i></div>
+                        <div class="orbit-item" style="--angle:30deg" title="Docker"><i class="fa-brands fa-docker"
+                                style="color:#2496ED"></i></div>
+                        <div class="orbit-item" style="--angle:150deg" title="Android"><i class="fa-brands fa-android"
+                                style="color:#3DDC84"></i></div>
+                        <div class="orbit-item" style="--angle:270deg" title="AWS Cloud"><i class="fa-brands fa-aws"
+                                style="color:#FF9900"></i></div>
                     </div>
                 </div>
                 <div class="stat-card card-top-left">
                     <div class="stat-number" data-target="12">0</div>
-                    <div class="stat-label">Years Exp.</div>
+                    <div class="stat-label">Years Experience</div>
                 </div>
                 <div class="stat-card card-top-right">
                     <div class="stat-number" data-target="30">0</div>
-                    <div class="stat-label">Team Size</div>
+                    <div class="stat-label">Engineers Led</div>
                 </div>
                 <div class="stat-card card-bottom">
-                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-number" data-target="30">0</div>
                     <div class="stat-label">% Faster Delivery</div>
                 </div>
             </div>
@@ -118,49 +212,58 @@
         <!-- ABOUT -->
         <section id="about" class="section">
             <div class="section-header reveal">
-                <p class="section-label">Who I Am</p>
+                <p class="section-label">Executive Overview</p>
                 <h2 class="section-title">Professional Summary</h2>
             </div>
             <div class="about-layout">
                 <div class="about-text glass-container reveal">
-                    <p>Technical Lead with <strong>12+ years of experience</strong> in architecting and delivering scalable CRM, FinTech, and Insurance applications across mobile and web platforms, leveraging <strong>7+ years of expertise in Flutter, Dart, and Clean Architecture</strong>.</p>
-                    <p>Proven track record in leading engineering teams (<strong>10–30+ members</strong>), driving CRM and financial system implementations, and optimizing Agile delivery through Scrum practices. Successfully implemented automation strategies, <strong>reducing delivery timelines by 30%+</strong>.</p>
+                    <p class="lead-p">
+                        Accomplished <strong>Technical Lead &amp; Software Architect</strong> with <strong>12+ years of engineering mastery</strong>, including <strong>7+ years dedicated to Flutter, Dart, and Clean Architecture</strong>.
+                    </p>
+                    <p>
+                        Specialized in spearheading mission-critical <strong>Insurance &amp; FinTech Platforms</strong>, scalable <strong>Enterprise HRMS &amp; Workforce Systems</strong>, and high-precision <strong>Healthcare &amp; IoT applications</strong>.
+                    </p>
+                    <p>
+                        Proven track record steering multi-disciplinary squads of <strong>10 to 30+ engineers</strong>, implementing CI/CD automated test pipelines, and driving Agile Scrum practices that reduce release cycle times by <strong>30%+</strong> while enforcing bank-grade security and zero-regression standards.
+                    </p>
                     <div class="about-tags">
-                        <span><i class="fas fa-check-circle"></i> Clean Architecture</span>
-                        <span><i class="fas fa-check-circle"></i> Agile / Scrum</span>
-                        <span><i class="fas fa-check-circle"></i> Team Leadership</span>
-                        <span><i class="fas fa-check-circle"></i> Flutter Expert</span>
-                        <span><i class="fas fa-check-circle"></i> AI Automation</span>
-                        <span><i class="fas fa-check-circle"></i> FinTech</span>
+                        <span class="tag-insurance"><i class="fas fa-shield-alt"></i> Insurance &amp; FinTech</span>
+                        <span class="tag-hrms"><i class="fas fa-users-gear"></i> Enterprise HRMS</span>
+                        <span class="tag-flutter"><i class="fa-brands fa-flutter"></i> Flutter &amp; Dart</span>
+                        <span class="tag-arch"><i class="fas fa-sitemap"></i> Clean Architecture</span>
+                        <span class="tag-health"><i class="fas fa-heartbeat"></i> Healthcare Apps</span>
+                        <span class="tag-iot"><i class="fas fa-tower-broadcast"></i> IoT &amp; BLE 5.0</span>
+                        <span class="tag-lead"><i class="fas fa-users"></i> Team Leadership (30+)</span>
+                        <span class="tag-devops"><i class="fas fa-bolt"></i> CI/CD &amp; DevOps</span>
                     </div>
                 </div>
                 <div class="about-stats-col">
-                    <div class="kpi-card glass-container reveal" style="transition-delay:0.1s">
-                        <div class="kpi-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="kpi-card glass-container kpi-card-insurance reveal" style="transition-delay:0.1s">
+                        <div class="kpi-icon"><i class="fas fa-shield-halved"></i></div>
+                        <div class="kpi-info">
+                            <div class="kpi-num" data-target="100">0</div>
+                            <div class="kpi-label">K+ Policies Processed</div>
+                        </div>
+                    </div>
+                    <div class="kpi-card glass-container reveal" style="transition-delay:0.2s">
+                        <div class="kpi-icon"><i class="fas fa-bolt"></i></div>
                         <div class="kpi-info">
                             <div class="kpi-num" data-target="30">0</div>
                             <div class="kpi-label">% Faster Releases</div>
                         </div>
                     </div>
-                    <div class="kpi-card glass-container reveal" style="transition-delay:0.2s">
+                    <div class="kpi-card glass-container reveal" style="transition-delay:0.3s">
                         <div class="kpi-icon"><i class="fas fa-users"></i></div>
                         <div class="kpi-info">
                             <div class="kpi-num" data-target="30">0</div>
-                            <div class="kpi-label">Engineers Led</div>
-                        </div>
-                    </div>
-                    <div class="kpi-card glass-container reveal" style="transition-delay:0.3s">
-                        <div class="kpi-icon"><i class="fas fa-rocket"></i></div>
-                        <div class="kpi-info">
-                            <div class="kpi-num" data-target="10">0</div>
-                            <div class="kpi-label">Apps Shipped</div>
+                            <div class="kpi-label">Engineers Mentored</div>
                         </div>
                     </div>
                     <div class="kpi-card glass-container reveal" style="transition-delay:0.4s">
-                        <div class="kpi-icon"><i class="fas fa-star"></i></div>
+                        <div class="kpi-icon"><i class="fas fa-rocket"></i></div>
                         <div class="kpi-info">
-                            <div class="kpi-num" data-target="12">0</div>
-                            <div class="kpi-label">Years Experience</div>
+                            <div class="kpi-num" data-target="15">0</div>
+                            <div class="kpi-label">Production Apps</div>
                         </div>
                     </div>
                 </div>
@@ -170,99 +273,481 @@
         <!-- SKILLS -->
         <section id="skills" class="section">
             <div class="section-header reveal">
-                <p class="section-label">What I Know</p>
-                <h2 class="section-title">Core Competencies</h2>
+                <p class="section-label">Core Competencies</p>
+                <h2 class="section-title">Technical Mastery &amp; Leadership</h2>
             </div>
+
             <div class="skills-bars-grid reveal">
                 <div class="skill-bar-item">
-                    <div class="skill-bar-header"><span><i class="fa-brands fa-flutter"></i> Flutter / Dart</span><span class="skill-pct">95%</span></div>
+                    <div class="skill-bar-header">
+                        <span><i class="fa-brands fa-flutter" style="color:#00f5d4"></i> Flutter &amp; Dart (Clean Architecture)</span>
+                        <span class="skill-pct">95%</span>
+                    </div>
                     <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95"></div></div>
                 </div>
                 <div class="skill-bar-item">
-                    <div class="skill-bar-header"><span><i class="fa-brands fa-react"></i> React / Next.js</span><span class="skill-pct">80%</span></div>
-                    <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+                    <div class="skill-bar-header">
+                        <span><i class="fas fa-umbrella" style="color:#38ef7d"></i> Insurance &amp; FinTech Platform Architecture</span>
+                        <span class="skill-pct">94%</span>
+                    </div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill skill-fill-emerald" data-width="94"></div></div>
                 </div>
                 <div class="skill-bar-item">
-                    <div class="skill-bar-header"><span><i class="fa-brands fa-node-js"></i> Node.js</span><span class="skill-pct">75%</span></div>
-                    <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div>
+                    <div class="skill-bar-header">
+                        <span><i class="fas fa-users-gear" style="color:#6366f1"></i> Technical Leadership, Scrum &amp; Delivery</span>
+                        <span class="skill-pct">92%</span>
+                    </div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill skill-fill-indigo" data-width="92"></div></div>
                 </div>
                 <div class="skill-bar-item">
-                    <div class="skill-bar-header"><span><i class="fa-brands fa-python"></i> Python / Analytics</span><span class="skill-pct">70%</span></div>
-                    <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div>
+                    <div class="skill-bar-header">
+                        <span><i class="fas fa-building-user" style="color:#00d4ff"></i> Enterprise HRMS &amp; CRM Systems</span>
+                        <span class="skill-pct">90%</span>
+                    </div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill skill-fill-cyan" data-width="90"></div></div>
                 </div>
                 <div class="skill-bar-item">
-                    <div class="skill-bar-header"><span><i class="fas fa-users-cog"></i> Team Leadership</span><span class="skill-pct">90%</span></div>
-                    <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div>
+                    <div class="skill-bar-header">
+                        <span><i class="fas fa-tower-broadcast" style="color:#f72585"></i> IoT, BLE 4.0/5.0 &amp; Healthcare Wearables</span>
+                        <span class="skill-pct">88%</span>
+                    </div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill skill-fill-pink" data-width="88"></div></div>
                 </div>
                 <div class="skill-bar-item">
-                    <div class="skill-bar-header"><span><i class="fas fa-robot"></i> AI / Automation</span><span class="skill-pct">78%</span></div>
-                    <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div>
+                    <div class="skill-bar-header">
+                        <span><i class="fa-brands fa-react" style="color:#61DAFB"></i> React / Next.js / Full Stack Cloud</span>
+                        <span class="skill-pct">82%</span>
+                    </div>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill skill-fill-blue" data-width="82"></div></div>
                 </div>
             </div>
+
             <div class="skills-grid">
-                <div class="skill-category glass-container reveal" style="transition-delay:0.1s">
-                    <div class="skill-cat-icon"><i class="fas fa-sitemap"></i></div>
-                    <h3>Architecture &amp; Dev</h3>
+                <!-- Insurance & FinTech -->
+                <div class="skill-category glass-container skill-cat-fintech reveal" style="transition-delay:0.1s">
+                    <div class="skill-cat-icon icon-emerald"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Insurance &amp; FinTech</h3>
                     <div class="tags">
-                        <span>Flutter</span><span>Dart</span><span>React Native</span><span>Android SDK</span>
-                        <span>Clean Architecture</span><span>MVVM</span><span>MVC</span><span>GetX</span>
-                        <span>Riverpod</span><span>BLoC</span><span>Provider</span><span>DI</span>
+                        <span>Policy Lifecycle</span><span>Premium Calculation Engines</span><span>Claims Adjudication</span>
+                        <span>KYC / OCR Workflows</span><span>Payment Gateways</span><span>Agent Distribution Portals</span>
+                        <span>B2B / B2C Portals</span><span>PCI-DSS Compliance</span><span>Financial Reconciliation</span>
                     </div>
                 </div>
-                <div class="skill-category glass-container reveal" style="transition-delay:0.2s">
-                    <div class="skill-cat-icon"><i class="fas fa-users-cog"></i></div>
-                    <h3>Leadership &amp; Mgmt</h3>
+
+                <!-- Enterprise HRMS & Systems -->
+                <div class="skill-category glass-container skill-cat-hrms reveal" style="transition-delay:0.2s">
+                    <div class="skill-cat-icon icon-indigo"><i class="fas fa-users-gear"></i></div>
+                    <h3>Enterprise HRMS &amp; CRM</h3>
                     <div class="tags">
-                        <span>Team Leadership</span><span>Agile/Scrum</span><span>Jira Workflow</span>
-                        <span>Sprint Planning</span><span>Delivery Ownership</span>
-                        <span>Code Review</span><span>Stakeholder Mgmt</span>
+                        <span>Geo-Fencing Attendance</span><span>Biometric Verification</span><span>Automated Payroll Engines</span>
+                        <span>Tax &amp; Statutory Deductions</span><span>Multi-tier Leave Approvals</span><span>Shift Scheduling</span>
+                        <span>Role-Based Access (RBAC)</span><span>KPI / KRA Appraisals</span><span>360° Customer View</span>
                     </div>
                 </div>
+
+                <!-- Mobile & Clean Architecture -->
                 <div class="skill-category glass-container reveal" style="transition-delay:0.3s">
-                    <div class="skill-cat-icon"><i class="fas fa-robot"></i></div>
-                    <h3>AI &amp; Automation</h3>
+                    <div class="skill-cat-icon icon-cyan"><i class="fas fa-sitemap"></i></div>
+                    <h3>Mobile &amp; Clean Architecture</h3>
                     <div class="tags">
-                        <span>AI Code Generators</span><span>R&amp;D Automation</span>
-                        <span>Rasa</span><span>Dialogflow</span>
-                        <span>Predictive Analytics</span><span>Intelligent Workflow</span>
+                        <span>Flutter</span><span>Dart</span><span>Clean Architecture</span><span>BLoC Pattern</span>
+                        <span>GetX</span><span>Riverpod</span><span>Provider</span><span>Dependency Injection</span>
+                        <span>MVVM</span><span>Android Native</span><span>Offline-First Sync</span><span>SQLite</span>
                     </div>
                 </div>
+
+                <!-- Healthcare & IoT -->
                 <div class="skill-category glass-container reveal" style="transition-delay:0.4s">
-                    <div class="skill-cat-icon"><i class="fas fa-layer-group"></i></div>
-                    <h3>UI/UX &amp; Performance</h3>
+                    <div class="skill-cat-icon icon-pink"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Healthcare &amp; IoT Wearables</h3>
                     <div class="tags">
-                        <span>Material Design 3</span><span>Custom Widgets</span>
-                        <span>Responsive Design</span><span>Animations</span>
-                        <span>Performance Optimization</span><span>Refactoring</span>
+                        <span>BLE 4.0 / 5.0</span><span>GATT Protocols</span><span>Medical Diagnostic Vitals</span>
+                        <span>Fertility AI Prediction</span><span>Telemedicine Systems</span><span>IoT Sensor Telemetry</span>
+                        <span>MQTT Protocol</span><span>Firebase FCM</span><span>Google Maps APIs</span>
                     </div>
                 </div>
+
+                <!-- Leadership & Delivery -->
                 <div class="skill-category glass-container reveal" style="transition-delay:0.5s">
-                    <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
-                    <h3>Programming &amp; Analytics</h3>
+                    <div class="skill-cat-icon icon-gold"><i class="fas fa-users-cog"></i></div>
+                    <h3>Leadership &amp; Agile Delivery</h3>
                     <div class="tags">
-                        <span>React.js</span><span>Next.js</span><span>Python</span>
-                        <span>Node.js</span><span>Angular</span><span>SPSS</span><span>Tableau</span>
+                        <span>Team Leadership (30+)</span><span>Agile &amp; Scrum</span><span>Sprint Planning</span>
+                        <span>Jira &amp; Confluence</span><span>CI/CD Automation</span><span>Architecture Governance</span>
+                        <span>Code Reviews</span><span>Mentorship</span><span>Stakeholder Management</span>
                     </div>
                 </div>
+
+                <!-- Web, Cloud & Analytics -->
                 <div class="skill-category glass-container reveal" style="transition-delay:0.6s">
-                    <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
-                    <h3>DevOps &amp; Tools</h3>
+                    <div class="skill-cat-icon icon-blue"><i class="fas fa-cloud"></i></div>
+                    <h3>Web, Cloud &amp; Analytics</h3>
                     <div class="tags">
-                        <span>Git</span><span>GitHub Actions</span><span>Jenkins</span>
-                        <span>Firebase</span><span>REST APIs</span>
-                        <span>Jira</span><span>Confluence</span><span>Figma</span>
+                        <span>React.js</span><span>Next.js (App Router)</span><span>Node.js</span>
+                        <span>TypeScript</span><span>RESTful APIs</span><span>JSON-LD SEO</span>
+                        <span>Python</span><span>SPSS Analytics</span><span>Docker</span>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS (INSURANCE FIRST) -->
+        <section id="projects" class="section">
+            <div class="section-header reveal">
+                <p class="section-label">Portfolio &amp; Case Studies</p>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Pioneering Insurance platforms, Enterprise HRMS suites, Healthcare applications, and IoT systems.</p>
+            </div>
+
+            <!-- Project Filter Controls -->
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn filter-btn-insurance" data-filter="insurance"><i class="fas fa-umbrella"></i> Insurance &amp; FinTech</button>
+                <button class="filter-btn filter-btn-hrms" data-filter="hrms"><i class="fas fa-users-gear"></i> Enterprise HRMS</button>
+                <button class="filter-btn filter-btn-health" data-filter="healthcare"><i class="fas fa-heartbeat"></i> Healthcare</button>
+                <button class="filter-btn filter-btn-iot" data-filter="iot"><i class="fas fa-microchip"></i> IoT &amp; Wearables</button>
+                <button class="filter-btn" data-filter="web-tools"><i class="fas fa-globe"></i> Web &amp; Tools</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- 1. BEEMA INSURANCE PLATFORM (MAIN FLAGSHIP PROJECT #1) -->
+                <div class="project-card glass-container card-theme-insurance reveal" data-category="insurance" data-project-id="beema"
+                    style="transition-delay:0.1s">
+                    <div class="project-card-badge badge-primary-flagship"><i class="fas fa-crown"></i> Main Flagship Project</div>
+                    <div class="project-card-icon icon-insurance">
+                        <i class="fas fa-umbrella"></i>
+                    </div>
+                    <div class="project-card-header-wrap">
+                        <span class="project-domain-tag tag-pill-insurance">Insurance &amp; FinTech Core</span>
+                        <h3>Beema Insurance Platform</h3>
+                    </div>
+                    <p>End-to-end B2C/B2B digital insurance ecosystem featuring real-time quote generation, dynamic actuarial premium calculation engines, OCR-based automated KYC, policy issuance, and broker distribution portals.</p>
+
+                    <div class="project-card-highlights">
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Dynamic Premium Calculation &amp; Actuarial Engine</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> In-App OCR Automated KYC &amp; Identity Verification</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Multi-tier Policy Lifecycle (Motor, Health, Life)</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Secure PCI-DSS Multi-Gateway Payment Bridges</div>
+                    </div>
+
+                    <div class="project-card-tags">
+                        <span>Flutter</span><span>Clean Architecture</span><span>BLoC</span><span>FinTech Engine</span><span>OCR KYC</span><span>Payment Gateway</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="ptype ptype-insurance"><i class="fas fa-shield-alt"></i> FinTech &amp; Insurance</span>
+                        <button class="btn-card-action view-details-btn btn-action-insurance" data-project="beema">
+                            <span>Case Study</span> <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2. ENTERPRISE HRMS & WORKFORCE SUITE (#2) -->
+                <div class="project-card glass-container card-theme-hrms reveal" data-category="hrms" data-project-id="hrms"
+                    style="transition-delay:0.2s">
+                    <div class="project-card-badge badge-enterprise"><i class="fas fa-building"></i> Enterprise Flagship</div>
+                    <div class="project-card-icon icon-hrms">
+                        <i class="fas fa-users-gear"></i>
+                    </div>
+                    <div class="project-card-header-wrap">
+                        <span class="project-domain-tag tag-pill-hrms">Workforce Management</span>
+                        <h3>Enterprise HRMS &amp; Workforce Suite</h3>
+                    </div>
+                    <p>Comprehensive Human Resource Management System with geo-fenced biometric attendance, automated multi-tier salary calculation engine, shift &amp; leave approval pipelines, and real-time executive analytics for 5,000+ employees.</p>
+
+                    <div class="project-card-highlights">
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Geo-Fencing &amp; Biometric Selfie Attendance</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Automated Payroll Engine with Tax (TDS/PF/ESI) Deductions</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Multi-tier Hierarchical Leave &amp; Shift Approvals</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Role-Based Access Control (RBAC) &amp; Encrypted Payslip PDF</div>
+                    </div>
+
+                    <div class="project-card-tags">
+                        <span>Flutter</span><span>Clean Architecture</span><span>BLoC</span><span>Geo-Fencing</span><span>Payroll Engine</span><span>PDF Generation</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="ptype ptype-hrms"><i class="fas fa-users"></i> Enterprise HRMS</span>
+                        <button class="btn-card-action view-details-btn btn-action-hrms" data-project="hrms">
+                            <span>Case Study</span> <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. OQIC MEDICAL CLAIMS HEALTHCARE APP (#3) -->
+                <div class="project-card glass-container card-theme-health reveal" data-category="healthcare" data-project-id="oqic"
+                    style="transition-delay:0.3s">
+                    <div class="project-card-icon icon-health">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="project-card-header-wrap">
+                        <span class="project-domain-tag tag-pill-health">Healthcare FinTech</span>
+                        <h3>OQIC Medical Claims Healthcare App</h3>
+                    </div>
+                    <p>Healthcare insurance claims processing app with real-time cashless approval tracking, digital hospital network directory, and healthcare provider billing integration.</p>
+                    <div class="project-card-highlights">
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Real-time Medical Claim Status &amp; Adjudication</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Healthcare Provider Direct Billing &amp; QR Health Card</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Smart Document Scanner with Auto-Edge Detection</div>
+                    </div>
+                    <div class="project-card-tags">
+                        <span>Flutter</span><span>MVVM</span><span>Firebase</span><span>Healthcare</span><span>Maps API</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="ptype ptype-health"><i class="fas fa-heart-pulse"></i> Healthcare Claims</span>
+                        <button class="btn-card-action view-details-btn btn-action-health" data-project="oqic">
+                            <span>Case Study</span> <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 4. MY GOOD NEWS WOMEN'S HEALTH & FERTILITY (#4) -->
+                <div class="project-card glass-container card-theme-health reveal" data-category="healthcare" data-project-id="goodnews"
+                    style="transition-delay:0.4s">
+                    <div class="project-card-icon icon-pink">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <div class="project-card-header-wrap">
+                        <span class="project-domain-tag tag-pill-pink">Women's Health AI</span>
+                        <h3>My Good News Healthcare Suite</h3>
+                    </div>
+                    <p>Integrated women’s health platform featuring AI fertility analytics, intelligent symptom checker, and personalized fitness workout routines delivering actionable health insights.</p>
+                    <div class="project-card-highlights">
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Fertility &amp; Ovulation Prediction Analytics</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> AI Medical Symptom Evaluation Engine</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Health Tracking &amp; Personalized Wellness</div>
+                    </div>
+                    <div class="project-card-tags">
+                        <span>Flutter</span><span>Google Maps</span><span>AI Analytics</span><span>Camera API</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="ptype ptype-health"><i class="fas fa-venus"></i> Healthcare &amp; Wellness</span>
+                        <button class="btn-card-action view-details-btn btn-action-health" data-project="goodnews">
+                            <span>Case Study</span> <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 5. NEUMA – BLE MEDICAL WEARABLE APP (#5) -->
+                <div class="project-card glass-container card-theme-iot reveal" data-category="iot" data-project-id="neuma"
+                    style="transition-delay:0.5s">
+                    <div class="project-card-badge badge-iot"><i class="fas fa-signal"></i> 10K+ Users</div>
+                    <div class="project-card-icon icon-iot">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-card-header-wrap">
+                        <span class="project-domain-tag tag-pill-iot">IoT / Wearables</span>
+                        <h3>Neuma – BLE Health Wearable App</h3>
+                    </div>
+                    <p>High-reliability Bluetooth Low Energy (BLE 4.0/5.0) IoT medical application streaming biometric vitals with zero packet drop, real-time alerting, and automated syncing.</p>
+                    <div class="project-card-highlights">
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Real-time Bi-directional BLE 4.0/5.0 GATT Stream</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Medical Vital Anomaly Detection &amp; Instant Alerts</div>
+                    </div>
+                    <div class="project-card-tags">
+                        <span>Flutter</span><span>BLE 4.0/5.0</span><span>GATT</span><span>Firebase</span><span>Wearables</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="ptype ptype-iot"><i class="fas fa-microchip"></i> IoT &amp; Medical</span>
+                        <button class="btn-card-action view-details-btn btn-action-iot" data-project="neuma">
+                            <span>Case Study</span> <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 6. ENTERPRISE CRM & FINANCIAL SYSTEM (#6) -->
+                <div class="project-card glass-container card-theme-insurance reveal" data-category="insurance" data-project-id="crm"
+                    style="transition-delay:0.6s">
+                    <div class="project-card-icon icon-gold">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-card-header-wrap">
+                        <span class="project-domain-tag tag-pill-insurance">Sales &amp; Financials</span>
+                        <h3>Enterprise CRM &amp; Financial System</h3>
+                    </div>
+                    <p>High-scale CRM for insurance agents — featuring lead management pipelines, 360° customer visibility, automated renewal alerts, and commission reconciliation.</p>
+                    <div class="project-card-highlights">
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> 360° Customer Interaction &amp; Policy Portfolio View</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Automated Policy Renewal Engine (SMS/WhatsApp/Email)</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Agent Commission &amp; Target Performance Tracker</div>
+                    </div>
+                    <div class="project-card-tags">
+                        <span>Flutter</span><span>GetX</span><span>CRM Core</span><span>Analytics</span><span>FinTech</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="ptype ptype-insurance"><i class="fas fa-briefcase"></i> Enterprise CRM</span>
+                        <button class="btn-card-action view-details-btn btn-action-insurance" data-project="crm">
+                            <span>Case Study</span> <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 7. SMART AGRICULTURE IOT DASHBOARD (#7) -->
+                <div class="project-card glass-container card-theme-iot reveal" data-category="iot" data-project-id="agri"
+                    style="transition-delay:0.7s">
+                    <div class="project-card-icon icon-cyan">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="project-card-header-wrap">
+                        <span class="project-domain-tag tag-pill-iot">AgriTech IoT</span>
+                        <h3>Smart Agriculture IoT Dashboard</h3>
+                    </div>
+                    <p>Flutter mobile IoT dashboard with live telemetry for soil moisture, temperature, and environmental metrics, with automated irrigation valve triggers.</p>
+                    <div class="project-card-highlights">
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Real-time Soil &amp; Climate Sensor Telemetry</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Remote Irrigation Actuator Automation</div>
+                    </div>
+                    <div class="project-card-tags">
+                        <span>Flutter</span><span>IoT Telemetry</span><span>Firebase</span><span>AgriTech</span><span>MQTT</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="ptype ptype-iot"><i class="fas fa-leaf"></i> AgriTech / IoT</span>
+                        <button class="btn-card-action view-details-btn btn-action-iot" data-project="agri">
+                            <span>Case Study</span> <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 8. REVOCHAMP PLATFORM & DEVTOOLS (#8) -->
+                <div class="project-card glass-container card-theme-web reveal" data-category="web-tools" data-project-id="revochamp"
+                    style="transition-delay:0.8s">
+                    <div class="project-card-icon icon-blue">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-card-header-wrap">
+                        <span class="project-domain-tag tag-pill-blue">Web Platform</span>
+                        <h3>Revochamp Platform &amp; DevTools</h3>
+                    </div>
+                    <p>Modern developer learning ecosystem and automated code generator built with Next.js App Router, SSR, SSG, and structured JSON-LD SEO.</p>
+                    <div class="project-card-highlights">
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> Flutter &amp; Frontend Automated Code Generation</div>
+                        <div class="highlight-item"><i class="fas fa-circle-check"></i> 100/100 Lighthouse Performance &amp; Structured SEO</div>
+                    </div>
+                    <div class="project-card-tags">
+                        <span>Next.js</span><span>React</span><span>SSR</span><span>SEO</span><span>TypeScript</span>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="ptype"><i class="fas fa-code"></i> Web &amp; DevTools</span>
+                        <button class="btn-card-action view-details-btn" data-project="revochamp">
+                            <span>Case Study</span> <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- EXPERIENCE -->
         <section id="experience" class="section">
             <div class="section-header reveal">
-                <p class="section-label">Career Path</p>
+                <p class="section-label">Track Record</p>
                 <h2 class="section-title">Professional Experience</h2>
             </div>
             <div class="timeline">
+
+                <!-- Behind Force Tech Solution (Featured Company) -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-connector">
+                        <div class="timeline-dot featured-dot"><i class="fas fa-shield-halved"></i></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content glass-container featured-company">
+                        <div class="timeline-meta">
+                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Feb 2023 – Sep 2025</span>
+                            <span class="timeline-badge featured">Key Leadership Role</span>
+                        </div>
+                        <h3>Technical Lead <span class="sep">|</span> Flutter Architect</h3>
+                        <h4 class="company-loc"><i class="fas fa-building"></i> Behind Force Tech Solution · Chennai, India</h4>
+
+                        <div class="exp-summary-box">
+                            <ul class="bullet-list">
+                                <li>Directed and mentored an engineering organization of <strong>30+ Flutter developers</strong>, establishing enterprise architectural patterns, coding guidelines, and technical roadmap.</li>
+                                <li>Headed daily Scrum ceremonies, sprint backlog grooming in Jira, and sprint velocity tracking across cross-functional squads.</li>
+                                <li>Engineered automated CI/CD deployment pipelines and comprehensive automated testing suites, <strong>reducing release turnaround time by 25–30%</strong>.</li>
+                                <li>Architected custom Flutter WebView JavaScript bridges for seamless, PCI-compliant payment gateway checkouts.</li>
+                                <li>Spearheaded performance tuning, reducing cold-start latency by 45% and optimizing memory footprint for large-scale enterprise deployments.</li>
+                            </ul>
+                        </div>
+
+                        <div class="sub-projects-title">
+                            <i class="fas fa-layer-group"></i> Key Projects Delivered at Behind Force Tech Solution:
+                        </div>
+
+                        <div class="sub-projects">
+                            
+                            <!-- 1. BEEMA INSURANCE PLATFORM (PRIMARY HIGHLIGHT) -->
+                            <div class="sub-project insurance-highlight">
+                                <div class="sub-project-header">
+                                    <div class="sub-project-title">
+                                        <i class="fas fa-umbrella" style="color:#38ef7d"></i> 
+                                        Beema Insurance Platform &amp; FinTech Ecosystem
+                                    </div>
+                                    <span class="sub-tag flagship-insurance"><i class="fas fa-crown"></i> Primary Flagship Project</span>
+                                </div>
+                                <p class="sub-project-desc">
+                                    Architected the end-to-end B2C and B2B insurance ecosystem handling policy issuance, digital endorsements, underwriting workflows, and distribution networks.
+                                </p>
+                                <ul class="sub-project-bullets">
+                                    <li><strong>Dynamic Quote &amp; Premium Engine:</strong> Real-time actuarial calculation engine with dynamic underwriting risk parameters.</li>
+                                    <li><strong>Automated KYC Onboarding:</strong> In-app OCR document scanning for instant identity and policyholder verification.</li>
+                                    <li><strong>Multi-Channel Payment Bridges:</strong> High-security payment gateway integration with automated tokenization and payment schedule reconciliation.</li>
+                                    <li><strong>Agent Distribution Portal:</strong> Real-time sales funnel tracking, commission payouts, and customer renewal automation.</li>
+                                </ul>
+                                <div class="sub-project-tech">
+                                    <span>Flutter</span><span>Clean Architecture</span><span>BLoC</span><span>FinTech Core</span><span>OCR KYC</span><span>Payment Gateways</span><span>Analytics</span>
+                                </div>
+                            </div>
+
+                            <!-- 2. ENTERPRISE HRMS SUITE (SECONDARY HIGHLIGHT) -->
+                            <div class="sub-project hrms-highlight">
+                                <div class="sub-project-header">
+                                    <div class="sub-project-title">
+                                        <i class="fas fa-users-gear" style="color:#00f5d4"></i> 
+                                        Enterprise HRMS &amp; Workforce Management Suite
+                                    </div>
+                                    <span class="sub-tag flagship-hrms"><i class="fas fa-building"></i> Enterprise Suite</span>
+                                </div>
+                                <p class="sub-project-desc">
+                                    Architected and delivered an enterprise-grade cross-platform HRMS application supporting <strong>5,000+ employees</strong> with offline-first sync.
+                                </p>
+                                <ul class="sub-project-bullets">
+                                    <li><strong>Attendance &amp; Geo-Fencing:</strong> Real-time GPS perimeter validation, biometric selfie verification, and shift clock-in/out.</li>
+                                    <li><strong>Automated Payroll Engine:</strong> Automated salary processing, tax deductions, allowances, statutory calculations, and automated PDF payslip generation.</li>
+                                    <li><strong>Leave &amp; Shift Management:</strong> Multi-tiered approval workflows, real-time balance tracker, compensatory-off management, and automated holiday calendars.</li>
+                                    <li><strong>Performance Appraisals:</strong> Dynamic quarterly KPI/KRA tracking, 360° feedback loops, and HR executive analytics dashboards.</li>
+                                    <li><strong>Security &amp; RBAC:</strong> Granular role-based access control (Super Admin, HR Manager, Department Head, Employee) with encrypted token-based sessions.</li>
+                                </ul>
+                                <div class="sub-project-tech">
+                                    <span>Flutter</span><span>Clean Architecture</span><span>BLoC</span><span>Geo-Fencing</span><span>Biometrics</span><span>REST APIs</span><span>PDF Engine</span>
+                                </div>
+                            </div>
+
+                            <!-- 3. OQIC MEDICAL HEALTHCARE APP -->
+                            <div class="sub-project">
+                                <div class="sub-project-title"><i class="fas fa-heartbeat" style="color:#00f5a0"></i> OQIC Medical Healthcare &amp; Claims App</div>
+                                <p class="sub-project-desc">
+                                    Engineered secure medical insurance claims processing, real-time cashless approval validation, and healthcare provider billing integration with instant status updates.
+                                </p>
+                                <div class="sub-project-tech">
+                                    <span>Flutter</span><span>MVVM</span><span>Firebase</span><span>Document Scanner</span><span>Healthcare APIs</span>
+                                </div>
+                            </div>
+
+                            <!-- 4. CRM & FINANCIAL SYSTEMS -->
+                            <div class="sub-project">
+                                <div class="sub-project-title"><i class="fas fa-chart-line" style="color:#fee140"></i> CRM &amp; Financial Systems</div>
+                                <p class="sub-project-desc">
+                                    Architected scalable CRM for insurance agents featuring 360° customer relationship views, lead conversion pipelines, automated premium renewal reminders, and payment tracking.
+                                </p>
+                                <div class="sub-project-tech">
+                                    <span>Flutter</span><span>GetX</span><span>Payment Bridge</span><span>Real-Time Notifications</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Freelance / Founder -->
                 <div class="timeline-item reveal">
                     <div class="timeline-connector">
                         <div class="timeline-dot"><i class="fas fa-laptop-code"></i></div>
@@ -271,69 +756,35 @@
                     <div class="timeline-content glass-container">
                         <div class="timeline-meta">
                             <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Sep 2025 – Feb 2026</span>
-                            <span class="timeline-badge">Freelance</span>
+                            <span class="timeline-badge">Freelance &amp; Products</span>
                         </div>
-                        <h3>Technical Lead <span class="sep">|</span> Freelancer</h3>
+                        <h3>Technical Lead <span class="sep">|</span> Full-Stack Architect</h3>
                         <h4 class="company-loc"><i class="fas fa-map-marker-alt"></i> Chennai, India</h4>
+
                         <div class="project-block">
-                            <div class="project-header"><i class="fas fa-cube"></i> Revochamp Platform</div>
-                            <div class="project-tags"><span>Next.js</span><span>React.js</span><span>SSR</span><span>SSG</span><span>SEO</span></div>
-                            <p class="project-role-text"><strong>Role:</strong> Founder / Flutter &amp; Frontend Developer &nbsp;|&nbsp; <strong>Type:</strong> Learning &amp; Blog Platform + Developer Tool</p>
+                            <div class="project-header"><i class="fas fa-cube"></i> Revochamp Platform &amp; DevTools</div>
+                            <div class="project-tags"><span>Next.js</span><span>React.js</span><span>SSR / SSG</span><span>JSON-LD SEO</span></div>
+                            <p class="project-role-text"><strong>Role:</strong> Founder &amp; Architect &nbsp;|&nbsp; <strong>Type:</strong> Developer Hub &amp; Code Generation Tools</p>
                             <ul class="bullet-list">
-                                <li>Developed a learning and blogging platform using <strong>React.js with Next.js</strong>.</li>
-                                <li>Implemented SEO-optimized blog architecture with structured data (JSON-LD).</li>
-                                <li>Designed high-performance pages with SSR, SSG, and optimized rendering.</li>
-                                <li>Built a code generation ecosystem supporting Flutter and other technologies.</li>
+                                <li>Engineered a developer education and tool suite using <strong>React.js with Next.js (SSR/SSG)</strong>, maximizing Core Web Vitals.</li>
+                                <li>Implemented an automated code generator for Flutter and frontend boilerplates, slashing project setup overhead.</li>
+                                <li>Engineered rich JSON-LD SEO schema architectures driving high organic search discovery.</li>
                             </ul>
                         </div>
+
                         <div class="project-block">
-                            <div class="project-header"><i class="fas fa-seedling"></i> Smart Agriculture App</div>
-                            <div class="project-tags"><span>Flutter</span><span>IoT</span><span>Firebase</span><span>Real-time</span></div>
-                            <p class="project-role-text"><strong>Role:</strong> Flutter Developer &nbsp;|&nbsp; <strong>Type:</strong> Mobile Application (IoT Integrated)</p>
+                            <div class="project-header"><i class="fas fa-seedling"></i> Smart Agriculture IoT Mobile App</div>
+                            <div class="project-tags"><span>Flutter</span><span>IoT Telemetry</span><span>Firebase</span><span>Live Dashboards</span></div>
+                            <p class="project-role-text"><strong>Role:</strong> Mobile Lead &nbsp;|&nbsp; <strong>Type:</strong> IoT AgriTech Solution</p>
                             <ul class="bullet-list">
-                                <li>Developed mobile app using Flutter, integrating IoT sensor data for real-time monitoring.</li>
-                                <li>Implemented live dashboard for soil moisture, temperature, humidity, and device linking.</li>
+                                <li>Developed Flutter mobile application with real-time IoT sensor telemetry (soil moisture, temperature, pH, humidity).</li>
+                                <li>Integrated threshold alert notifications and device pairing wizards for remote farm automation.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="timeline-item reveal">
-                    <div class="timeline-connector">
-                        <div class="timeline-dot"><i class="fas fa-shield-alt"></i></div>
-                        <div class="timeline-line"></div>
-                    </div>
-                    <div class="timeline-content glass-container">
-                        <div class="timeline-meta">
-                            <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Feb 2023 – Sep 2025</span>
-                            <span class="timeline-badge featured">Featured</span>
-                        </div>
-                        <h3>Technical Lead <span class="sep">|</span> Flutter Architect</h3>
-                        <h4 class="company-loc"><i class="fas fa-building"></i> Behind Force Tech Solution · Chennai, India</h4>
-                        <ul class="bullet-list">
-                            <li>Managed and mentored a team of <strong>30+ Flutter developers</strong>, overseeing architecture, delivery, and performance reviews.</li>
-                            <li>Facilitated daily Scrum calls, assigned Jira tasks, and tracked Agile sprint activities.</li>
-                            <li>Implemented CI/CD pipelines and automated testing, <strong>reducing release cycles by 25%</strong>.</li>
-                            <li>Integrated Flutter WebView modules with JavaScript bridge for secure payment gateways.</li>
-                            <li>Optimized app startup time, rendering performance, and API response handling for enterprise B2C/B2B ecosystems.</li>
-                        </ul>
-                        <div class="sub-projects">
-                            <div class="sub-project">
-                                <div class="sub-project-title"><i class="fas fa-chart-line"></i> CRM &amp; Financial Systems</div>
-                                Architected scalable CRM for agents — lead management, policy tracking, 360° customer view, renewal alerts, and automated payment reminders.
-                            </div>
-                            <div class="sub-project">
-                                <div class="sub-project-title"><i class="fas fa-heartbeat"></i> OQIC Medical App</div>
-                                Claims Processing, Policy Validation, and Provider Billing. Real-time claim tracking and cashless billing support.
-                            </div>
-                            <div class="sub-project">
-                                <div class="sub-project-title"><i class="fas fa-umbrella"></i> Beema Insurance Platform</div>
-                                End-to-end B2C/B2B ecosystems. Policy lifecycle modules, premium calculation engines, KYC workflows, and real-time dashboards.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <!-- Indium Software -->
                 <div class="timeline-item reveal">
                     <div class="timeline-connector">
                         <div class="timeline-dot"><i class="fas fa-microchip"></i></div>
@@ -346,15 +797,15 @@
                         <h3>Senior Software Engineer</h3>
                         <h4 class="company-loc"><i class="fas fa-building"></i> Indium Software · Chennai, India</h4>
                         <ul class="bullet-list">
-                            <li>Designed, developed, and maintained cross-platform mobile apps using Flutter.</li>
-                            <li>Implemented <strong>Bluetooth Low Energy (BLE)</strong> communication for real-time IoT device interaction.</li>
-                            <li>Built reusable UI components and scalable architectures using GetX and BLoC.</li>
-                            <li><strong>Neuma App:</strong> BLE 4.0 + Firebase integration; 10K+ downloads.</li>
-                            <li><strong>Rem42 App:</strong> BLE device control tracking sleep quality, fatigue, and performance.</li>
+                            <li>Architected cross-platform Flutter applications with high-throughput <strong>Bluetooth Low Energy (BLE 4.0/5.0)</strong> protocols.</li>
+                            <li><strong>Neuma Health App:</strong> Built real-time bi-directional BLE communication with wearable medical devices; scaled to 10K+ active downloads on Play Store.</li>
+                            <li><strong>Rem42 Sleep Analytics:</strong> Integrated IoT hardware tracking sleep cycles, fatigue levels, and biometric sleep efficiency metrics.</li>
+                            <li>Designed standardized reusable Flutter UI component libraries and state architectures using BLoC and GetX.</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- Revenup -->
                 <div class="timeline-item reveal">
                     <div class="timeline-connector">
                         <div class="timeline-dot"><i class="fas fa-heartbeat"></i></div>
@@ -367,131 +818,73 @@
                         <h3>Flutter Developer</h3>
                         <h4 class="company-loc"><i class="fas fa-building"></i> Revenup · Chennai, India</h4>
                         <ul class="bullet-list">
-                            <li>Developed cross-platform Flutter apps across healthcare and fitness domains.</li>
-                            <li>Integrated Google Maps, Camera, and AI-based analytics APIs for personalized insights.</li>
-                            <li>Built Fertility Analysis App, AI Medical Check App, and Fitness Tracking App.</li>
+                            <li>Developed consumer healthcare applications in Flutter: Fertility Analysis, AI Medical Check, and Fitness Tracking.</li>
+                            <li>Integrated Google Maps SDK, custom Camera APIs, and AI inference models for tailored wellness recommendations.</li>
                         </ul>
                     </div>
                 </div>
 
+                <!-- TCS -->
                 <div class="timeline-item reveal">
                     <div class="timeline-connector">
-                        <div class="timeline-dot"><i class="fas fa-chart-bar"></i></div>
+                        <div class="timeline-dot"><i class="fas fa-chart-pie"></i></div>
                     </div>
                     <div class="timeline-content glass-container">
                         <div class="timeline-meta">
                             <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Oct 2013 – Jan 2019</span>
                         </div>
-                        <h3>Business Analyst</h3>
+                        <h3>Business &amp; Data Analyst</h3>
                         <h4 class="company-loc"><i class="fas fa-building"></i> Tata Consultancy Services (TCS) · Chennai, India</h4>
                         <ul class="bullet-list">
-                            <li>Performed financial data analysis and customer segmentation using Python and SPSS.</li>
-                            <li>Built predictive models for customer behavior and revenue optimization.</li>
-                            <li>Delivered dashboards for business KPIs, financial trends, and performance tracking.</li>
+                            <li>Executed financial data analytics, predictive modeling, and customer segmentation using Python and SPSS.</li>
+                            <li>Built executive KPI tracking dashboards for revenue optimization, forecasting, and stakeholder reporting.</li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- PROJECTS -->
-        <section id="projects" class="section">
-            <div class="section-header reveal">
-                <p class="section-label">What I've Built</p>
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card glass-container reveal" style="transition-delay:0.1s">
-                    <div class="project-card-icon" style="--card-clr:#4facfe">
-                        <i class="fas fa-globe"></i>
+        <!-- PROJECT DETAIL MODAL -->
+        <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal-card glass-container">
+                <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-header">
+                    <div class="modal-icon" id="modal-icon"></div>
+                    <div class="modal-title-wrap">
+                        <span class="modal-category" id="modal-category">Platform Category</span>
+                        <h3 class="modal-title" id="modal-title">Project Title</h3>
                     </div>
-                    <h3>Revochamp Platform</h3>
-                    <p>A modern developer-focused platform combining a learning hub, blog system, and code generation tools.</p>
-                    <div class="project-card-tags"><span>Next.js</span><span>React</span><span>SSR</span><span>SEO</span></div>
-                    <div class="project-card-footer"><span class="ptype">Learning Platform</span></div>
                 </div>
-                <div class="project-card glass-container reveal" style="transition-delay:0.2s">
-                    <div class="project-card-icon" style="--card-clr:#f093fb">
-                        <i class="fas fa-umbrella"></i>
-                    </div>
-                    <h3>Beema Insurance Platform</h3>
-                    <p>End-to-end B2C/B2B insurance ecosystem with policy lifecycle, KYC, payment gateways, and real-time dashboards.</p>
-                    <div class="project-card-tags"><span>Flutter</span><span>Clean Architecture</span><span>BLoC</span></div>
-                    <div class="project-card-footer"><span class="ptype">Enterprise FinTech</span></div>
+                <div class="modal-body" id="modal-body">
+                    <!-- Dynamic modal content inserted via JS -->
                 </div>
-                <div class="project-card glass-container reveal" style="transition-delay:0.3s">
-                    <div class="project-card-icon" style="--card-clr:#43e97b">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>OQIC Medical App</h3>
-                    <p>Claims Processing, Policy Validation, and Provider Billing with real-time claim tracking and cashless billing.</p>
-                    <div class="project-card-tags"><span>Flutter</span><span>MVVM</span><span>Firebase</span></div>
-                    <div class="project-card-footer"><span class="ptype">Healthcare</span></div>
-                </div>
-                <div class="project-card glass-container reveal" style="transition-delay:0.4s">
-                    <div class="project-card-icon" style="--card-clr:#fa709a">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Neuma – BLE Health App</h3>
-                    <p>BLE 4.0 + Firebase integrated health tracking app with 10K+ downloads, optimized for real-time device communication.</p>
-                    <div class="project-card-tags"><span>Flutter</span><span>BLE 4.0</span><span>Firebase</span></div>
-                    <div class="project-card-footer"><span class="ptype">Health / IoT</span></div>
-                </div>
-                <div class="project-card glass-container reveal" style="transition-delay:0.5s">
-                    <div class="project-card-icon" style="--card-clr:#4facfe">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Smart Agriculture App</h3>
-                    <p>Flutter mobile app with IoT sensor integration — real-time monitoring of soil moisture, temperature, and humidity.</p>
-                    <div class="project-card-tags"><span>Flutter</span><span>IoT</span><span>Firebase</span></div>
-                    <div class="project-card-footer"><span class="ptype">AgriTech / IoT</span></div>
-                </div>
-                <div class="project-card glass-container reveal" style="transition-delay:0.6s">
-                    <div class="project-card-icon" style="--card-clr:#fee140">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>CRM &amp; Financial System</h3>
-                    <p>Scalable CRM for insurance agents — lead management, policy tracking, 360° customer view, and renewal automation.</p>
-                    <div class="project-card-tags"><span>Flutter</span><span>GetX</span><span>CRM</span></div>
-                    <div class="project-card-footer"><span class="ptype">Enterprise CRM</span></div>
-                </div>
-
-                <div class="project-card glass-container reveal" style="transition-delay:0.7s">
-                    <div class="project-card-icon" style="--card-clr:#f9a8d4">
-                        <i class="fas fa-baby"></i>
-                    </div>
-                    <h3>My Good News</h3>
-                    <p>A comprehensive women's health &amp; fertility platform. Includes Fertility Analysis, AI-powered Medical Check, and Fitness Tracking — delivering personalized health insights through smart analytics.</p>
-                    <div class="project-card-highlights">
-                        <div class="highlight-item"><i class="fas fa-circle-dot"></i> Fertility Analysis App</div>
-                        <div class="highlight-item"><i class="fas fa-circle-dot"></i> AI Medical Check App</div>
-                        <div class="highlight-item"><i class="fas fa-circle-dot"></i> Fitness Tracking App</div>
-                    </div>
-                    <div class="project-card-tags"><span>Flutter</span><span>Google Maps</span><span>AI Analytics</span><span>Camera API</span><span>Healthcare</span></div>
-                    <div class="project-card-footer">
-                        <span class="ptype">Health &amp; Fitness</span>
-                        <span class="pperiod"><i class="fas fa-calendar-alt"></i> Jan 2019 – May 2021</span>
-                    </div>
+                <div class="modal-footer" id="modal-footer">
+                    <div class="modal-tags" id="modal-tags"></div>
+                    <button class="btn primary-btn modal-dismiss-btn" id="modal-dismiss-btn">Close Case Study</button>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- EDUCATION -->
         <section id="education" class="section">
             <div class="section-header reveal">
                 <p class="section-label">Academic Background</p>
-                <h2 class="section-title">Education</h2>
+                <h2 class="section-title">Education &amp; Qualifications</h2>
             </div>
             <div class="edu-card glass-container reveal">
                 <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
                 <div class="edu-body">
                     <div class="edu-degree">Bachelor of Science (B.Sc)</div>
                     <h3>Electronics &amp; Communication</h3>
-                    <div class="edu-uni"><i class="fas fa-university"></i> University of Madras</div>
+                    <div class="edu-uni"><i class="fas fa-university"></i> University of Madras, Chennai</div>
                     <div class="edu-meta">
                         <span class="edu-badge"><i class="fas fa-medal"></i> First Class</span>
-                        <span class="edu-year"><i class="fas fa-calendar"></i> Graduated 2013</span>
+                        <span class="edu-year"><i class="fas fa-calendar-check"></i> Graduated 2013</span>
                     </div>
+                    <p class="edu-desc">Strong foundation in digital electronics, computational logic, systems programming, and algorithmic data processing.</p>
                 </div>
             </div>
         </section>
@@ -504,30 +897,40 @@
             </div>
             <div class="contact-layout">
                 <div class="contact-intro glass-container reveal">
-                    <h3>Open to New Opportunities</h3>
-                    <p>I'm always open to discussing technical leadership roles, Flutter architecture challenges, or exciting new ventures. Let's build something great together.</p>
+                    <h3>Open for Technical Leadership</h3>
+                    <p>I am available for Technical Lead, Insurance / FinTech Architect, and Engineering Management opportunities. Whether you have an insurance ecosystem to modernize or an enterprise application to scale, let's connect.</p>
+
                     <div class="contact-links">
-                        <a href="mailto:kishorekumar.selvaraja13@gmail.com" class="contact-link-item" id="contact-email">
+                        <div class="contact-link-item copy-item" data-copy="kishorekumar.selvaraja13@gmail.com"
+                            data-label="Email" title="Click to copy email">
                             <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
                             <div class="contact-link-text">
-                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-label">Email (Click to Copy)</span>
                                 <span class="contact-link-value">kishorekumar.selvaraja13@gmail.com</span>
                             </div>
-                        </a>
-                        <a href="tel:+919092954409" class="contact-link-item" id="contact-phone">
+                            <div class="copy-action-icon"><i class="far fa-copy"></i></div>
+                        </div>
+
+                        <div class="contact-link-item copy-item" data-copy="+919092954409" data-label="Phone Number"
+                            title="Click to copy phone">
                             <div class="contact-link-icon"><i class="fas fa-phone"></i></div>
                             <div class="contact-link-text">
-                                <span class="contact-link-label">Phone</span>
+                                <span class="contact-link-label">Phone / WhatsApp (Click to Copy)</span>
                                 <span class="contact-link-value">+91 9092954409</span>
                             </div>
-                        </a>
-                        <a href="https://linkedin.com/in/kishore-kumar-aaa308126" target="_blank" rel="noopener" class="contact-link-item" id="contact-linkedin">
+                            <div class="copy-action-icon"><i class="far fa-copy"></i></div>
+                        </div>
+
+                        <a href="https://linkedin.com/in/kishore-kumar-aaa308126" target="_blank" rel="noopener"
+                            class="contact-link-item" id="contact-linkedin" title="Open LinkedIn Profile">
                             <div class="contact-link-icon"><i class="fab fa-linkedin-in"></i></div>
                             <div class="contact-link-text">
                                 <span class="contact-link-label">LinkedIn</span>
-                                <span class="contact-link-value">kishore-kumar-aaa308126</span>
+                                <span class="contact-link-value">linkedin.com/in/kishore-kumar-aaa308126</span>
                             </div>
+                            <div class="copy-action-icon"><i class="fas fa-external-link-alt"></i></div>
                         </a>
+
                         <div class="contact-link-item static-item" id="contact-location">
                             <div class="contact-link-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="contact-link-text">
@@ -537,8 +940,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="contact-form-wrap glass-container reveal" style="transition-delay:0.2s">
-                    <h3>Send a Message</h3>
+                    <h3>Send a Direct Message</h3>
                     <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
                         <div class="form-group">
                             <label for="cf-name">Your Name</label>
@@ -549,10 +953,16 @@
                             <input type="email" id="cf-email" placeholder="jane@example.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="cf-message">Message</label>
-                            <textarea id="cf-message" rows="5" placeholder="Hi Kishore, I'd love to discuss..." required></textarea>
+                            <label for="cf-subject">Subject</label>
+                            <input type="text" id="cf-subject" placeholder="Insurance / FinTech Leadership Discussion" required>
                         </div>
-                        <button type="submit" class="btn primary-btn" id="form-submit-btn">
+                        <div class="form-group">
+                            <label for="cf-message">Message</label>
+                            <textarea id="cf-message" rows="4"
+                                placeholder="Hi Kishore, I'd like to discuss a leadership opportunity in Insurance / Flutter architecture..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn" id="form-submit-btn">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                         <p class="form-note" id="form-status"></p>
@@ -564,14 +974,19 @@
 
     <footer>
         <div class="footer-inner">
-            <div class="footer-logo">Kishore Kumar<span>.</span></div>
-            <p class="footer-tagline">Technical Lead · Flutter Architect · Problem Solver</p>
+            <div class="footer-logo">
+                <span class="footer-logo-badge"><i class="fas fa-shield-alt"></i></span>
+                Kishore Kumar<span>.</span>
+            </div>
+            <p class="footer-tagline">Technical Lead · Insurance &amp; FinTech Architect · Flutter Specialist</p>
             <div class="footer-socials">
-                <a href="https://linkedin.com/in/kishore-kumar-aaa308126" target="_blank" rel="noopener" aria-label="LinkedIn" id="footer-linkedin"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:kishorekumar.selvaraja13@gmail.com" aria-label="Email" id="footer-email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/kishore-kumar-aaa308126" target="_blank" rel="noopener"
+                    aria-label="LinkedIn" id="footer-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:kishorekumar.selvaraja13@gmail.com" aria-label="Email" id="footer-email"><i
+                        class="fas fa-envelope"></i></a>
                 <a href="tel:+919092954409" aria-label="Phone" id="footer-phone"><i class="fas fa-phone"></i></a>
             </div>
-            <p class="footer-copy">&copy; 2026 S. Kishore Kumar. All Rights Reserved.</p>
+            <p class="footer-copy">&copy; 2026 S. Kishore Kumar. All Rights Reserved. Built with clean web performance standards.</p>
         </div>
     </footer>
 
@@ -581,4 +996,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
